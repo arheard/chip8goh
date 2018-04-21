@@ -5,3 +5,11 @@ Run by using go run main.go [-d] [romname]
 Running with the [-d] flag provides optional debug output
 
 Program requires SDL2 library and is only tested on MacOSX
+
+Included in the roms folder are several games (not written by me) for anyone who'd like to test out the interpreter. 
+
+Controls vary between games but the recognized keys are: 
+1 2 3 4 
+Q W E R
+A S D F
+Z X C V
