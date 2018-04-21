@@ -1,11 +1,11 @@
 # chip8goh
 Chip8 interpreter/emulator in the Go programming language
 
-Run by using go run main.go [-d] [romname].
+Run from by using chip8goh [-d] [filename].
 
 Running with the [-d] flag provides optional debug output.
 
-Program requires SDL2 library and is only tested on MacOSX
+Running from source requires SDL2 library and is only tested on MacOSX
 
 Included in the roms folder are several games (not written by me) for anyone who'd like to test out the interpreter. 
 
