@@ -17,15 +17,15 @@ var chip8OpcodeTable [16]func() // Array of function pointers for opcode handlin
 var chip8op8 [15]func()         // Sub array of funciton handlers for 8xxx specific handling
 var gfx [64 * 32]uint8          // Graphics buffer
 var stack [16]uint16
-var sp uint16              // Stack Pointer
-var key [16]uint8          // Rey mapping key[index] = pressed (0 | 1)
-var keyPressed bool        // Flag for if a key was pressed during the last frame
-var currentKeyValue uint8  // Value for the key pressed within the last frame
-var chip8Fontset [80]uint8 // Stors internal representation of fontset
+var sp uint16              	// Stack Pointer
+var key [16]uint8          	// Rey mapping key[index] = pressed (0 | 1)
+var keyPressed bool        	// Flag for if a key was pressed during the last frame
+var currentKeyValue uint8  	// Value for the key pressed within the last frame
+var chip8Fontset [80]uint8 	// Stors internal representation of fontset
 var delayTimer uint8
 var soundTimer uint8
-var lastCycleTime uint64 // Epoch time of last cycle, used for assuring framerate
-var cpuWaiting bool      // Flag to determine if the program should perform instructions or not
+var lastCycleTime uint64 	// Epoch time of last cycle, used for assuring framerate
+var cpuWaiting bool      	// Flag to determine if the program should perform instructions or not
 
 //DrawFlag flag indicating if the scren should be drawn
 var DrawFlag bool
